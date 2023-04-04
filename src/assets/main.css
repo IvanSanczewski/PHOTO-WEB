@@ -1,4 +1,5 @@
 @import './base.css';
+@import './navbar.css';
 
 
 body {
@@ -22,19 +23,43 @@ body {
   font-weight: normal;
 }
 
-.app-container {
+/* .app-container {
   padding: 1rem 2rem;
   padding: 2vh 10vw;
   min-height: 100vh;
+} */
+
+.container {
+  max-width: 1080px;
+  width: 90vw;
+  margin: 0 auto;
+
+  height: 95dvh;
   
-  /* background: url('../assets/images/ISP_BLACK_SEA_1873_Edit_225_300.jpg'); */
-  /* background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: rgb(49, 49, 49);
-  background-blend-mode: multiply; */
-  
-  /* background-position: center;  */
+  display: flex;
+  flex-direction: column;
+
 }
+
+.container-main {
+  margin-top: 3em;
+  flex-grow: 1;
+}
+
+.container-footer {
+  margin-bottom: 3em;
+  flex-shrink: 0;
+}
+
+
+/* #app{
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+} */
+
+
+
 
 img {
   display: block;
@@ -48,6 +73,23 @@ a {
   transition: 0.4s;
 }
 
+.cta-btn {
+  display: inline-block;
+  padding: .6em 2em;
+  
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  
+  color: rgb(30, 30, 30) ;
+  background-color: hsla(160, 100%, 37%, 1);
+  border-radius: 100px;
+}
+
+.cta-btn:hover {
+  background-color: hsla(160, 100%, 37%, 0.6);
+}
+
 h1 {
   /* margin: .5em 0; */
   text-transform: uppercase;
@@ -55,6 +97,7 @@ h1 {
 }
 
 h1 + h1 {
+  width: 70%;
   border-top: 2px solid white;
 }
 
@@ -64,43 +107,108 @@ br {
   border-top: 2px solid white;
 }
 
-.hero__content {
+
+
+
+
+
+
+
+
+/*
+****************
+H E R O
+****************
+*/
+
+
+.hero {
   /* margin: 25vh 0; */
   min-height: 95vh;
   text-transform: capitalize;
-  background: url('../assets/images/ISP_BLACK_SEA_1873_Edit_225_300.jpg');
+  /* background: url('../assets/images/ISP_BLACK_SEA_1873_Edit_225_300.jpg'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100%; */
+  background-color: darkolivegreen;
+  /* background-color: rgb(49, 49, 49); */
+  /* background-blend-mode: multiply; */
+  /* background-position: center;  */
 } 
 
 .hero__content--title {
-  /* margin-top: 15rem 0; */
-  margin: 2vh 0;
+  margin-top: 25dvh
+  /* margin: 2vh 0; */
 }
 
 .hero__content--cta {
-  margin-top: 5vh;
+  margin-top: 5rem;
 }
 
-.link-down {
+.next-section {
   cursor: pointer;
+  /* text-align: center; */
 }
 
 .join {
   /* margin: 25vh 0; */
   min-height: 95vh;
   text-transform: capitalize;
-  background: url('../assets/images/ISP_BCN_NOCTAMBUL_254.jpg');
+  /* background: url('../assets/images/ISP_BCN_NOCTAMBUL_254.jpg'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100%; */
+  background-color: rgb(181, 181, 181);
+  /* background-blend-mode: multiply;  */
+  /* background-position: center;  */
+}
+
+.join--title {
+  text-align: center;
+}
+
+.join--sessions {
+  margin: 10rem 0 2rem;
+}
+
+.heading {
+  min-height: 95vh;
+  text-transform: uppercase;
+  
+  text-align: center;
+
+  color:rgb(30, 30, 30);
+  background-color: #f1f1f1;
+}
+
+h2 + h2 {
+  margin-top: 3rem;
 }
 
 .syllabus {
   /* margin: 25vh 0; */
   min-height: 95vh;
   text-transform: capitalize;
-  background: url('../assets/images/ISP_NORVILISKES_112.jpg');
+  /* background: url('../assets/images/ISP_NORVILISKES_112.jpg'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100%; */
+  background-color: rgb(49, 49, 49);
+  /* background-blend-mode: multiply; */
+  
+  /* background-position: center;  */
 }
 
-@media (hover: hover) {
+.syllabus img {
+  margin: 1em 0;
+}
+
+.syllabus--shooting,
+.syllabus--editing {
+  margin-top: 3em
+}
+
+
+/* @media (hover: hover) {
   a:hover {
     color:rgb(30, 30, 30);
     background-color: hsla(160, 100%, 37%, 1);
   }
-}
+} */
