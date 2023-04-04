@@ -1,42 +1,46 @@
 <template>
     <section class="hero">
-        <div class="container">
-            <div class="container-main">
-                <div class="hero__content--title">
-                    <p>learn</p>
-                    <h1>black & white</h1>
-                    <h1>photography workshop</h1>
+        <div class="hero--background">
+            <div class="container">
+                <div class="container-main">
+                    <div class="hero__content--title">
+                        <p>learn</p>
+                        <h1>black & white</h1>
+                        <h1>photography workshop</h1>
+                    </div>
+                    <h2>Practice and theory</h2>
+                    <div class="hero__content--cta">
+                        <RouterLink to="/Join" class="cta-btn">join workshop</RouterLink>
+                    </div>
                 </div>
-                <h2>Practice and theory</h2>
-                <div class="hero__content--cta">
-                    <RouterLink to="/Join" class="cta-btn">join workshop</RouterLink>
+                <div class="container-footer">
+                    <a href="#join"><span class="next-section-down">V</span></a>
                 </div>
-            </div>
-            <div class="container-footer">
-                <a href="#join"><span class="next-section-down">V</span></a>
             </div>
         </div>
     </section>
 
     <section id="join" class="join">
-        <div class="container">
-            <div class="container-main">
-                <div class="join--title">
-                    <h2>An all-practice workshop</h2>
+        <div class="join--backgound">
+            <div class="container">
+                <div class="container-main">
+                    <div class="join--title">
+                        <h2>An <i>all-practice</i> workshop</h2>
+                    </div>
+                    <img src="../assets/images/ISP_BASIC_2.jpg" alt="">
+                    <p class="image-caption"><span>portrait </span><span> landscape</span><span> street photo</span></p>
+                    <div class="join--sessions">
+                        <p>3 Outdoor shooting sessions</p>
+                        <p>6 Photoshop editing sessions</p>
+                        <p>18 hours of lectures</p>
+                    </div>
+                    <div class="join--price">
+                        <p>price: <span>100.00 €</span></p>
+                    </div>
                 </div>
-                <img src="../assets/images/ISP_BASIC_2.jpg" alt="">
-                <div class="join--sessions">
-                    <p>3 Outdoor shooting sessions</p>
-                    <p><span>portrait </span><span> landscape</span><span> street photo</span></p>
-                    <p>6 Photoshop editing sessions</p>
-                    <p>18 hours of lectures</p>
+                <div class="container-footer">
+                    <a href="#syllabus"><span class="next-section">V</span></a>
                 </div>
-                <div class="join--price">
-                    <p>105 euros</p>
-                </div>
-            </div>
-            <div class="container-footer">
-                <a href="#syllabus"><span class="next-section">V</span></a>
             </div>
         </div>
     </section>
@@ -44,9 +48,9 @@
     <section id="heading" class="heading">
         <div class="container">
             <div class="container-main">
-                <h2>Improve your skill and technique, develop your photographic style and give your images a narrative sense</h2>
-                <h2>Learn professional developing & retouching with Photoshop and understand its core functions in a step-by-step methodology </h2>
-                <h2>Individual porfolio reviews and classmate based discussions in every editing session</h2>
+                <h3>Improve your skill and technique, develop your photographic style and give your images a narrative sense</h3>
+                <h3>Learn professional developing & retouching with Photoshop and understand its core functions in a step-by-step methodology </h3>
+                <h3>Individual porfolio reviews and classmate based discussions in every editing session</h3>
             </div>
             <div class="container-footer">
                 <a href="#syllabus"><span class="next-section">V</span></a>

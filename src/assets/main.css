@@ -66,7 +66,12 @@ body {
 
 img {
   display: block;
+  margin: 0 auto;
   width: 100%;
+  max-width: 650px;
+  max-height: 40dvh;
+  object-fit: cover;
+
 }
 
 a {
@@ -102,6 +107,14 @@ h1 + h1 {
   letter-spacing: .1rem;
 }
 
+h2 {
+  margin-bottom: 1em;
+
+  font-size: 2.25rem;
+  font-family: var(--font-family-large-h);
+  
+}
+
 br {
   display: inline-block;
   height: 12px;
@@ -128,18 +141,17 @@ H E R O
   background-image: url('../assets/images/ISP_BLACK_SEA_1873_Edit_225_300.jpg');
   background-repeat: no-repeat;
   background-position: center; 
-  /* margin: 25vh 0; */
-  /* text-transform: capitalize; */
-  /* background: url('../assets/images/ISP_BLACK_SEA_1873_Edit_225_300.jpg'); */
   /* background-size: 100%; */
-  /* background-color: rgb(49, 49, 49); */
 } 
 
-.hero .container {
-  background-color: rgba(85, 107, 47, 0.8); 
-  /* background-blend-mode: multiply; */
+.hero--background {
+  max-width: 1200px; 
+  margin: 0 auto;
+  /* background-color: rgba(120, 0, 20, 0.916); */
+  background-color: rgba(5, 62, 39, 0.885);
+  background: linear-gradient(-45deg, rgba(152, 12, 12, 0.76), rgba(28, 28, 158, 0.715));
+  background-size: 120% ;
 }
-
 
 .hero__content--title {
   margin-top: 24dvh
@@ -155,6 +167,7 @@ H E R O
 
 .hero h2 {
   margin-top: 1em;
+  margin-bottom: 0;
 
   font-family: var(--font-family-large-h);
   font-weight: 400;
@@ -176,14 +189,18 @@ H E R O
   font-weight: 700;
   letter-spacing: 1.2px;
   
-  color: rgb(30, 30, 30) ;
-  background-color: hsla(160, 100%, 37%, 1);
+  color: rgb(30, 30, 30);
+  color: white;
+  background-color: transparent;
+  border: 3px solid  rgb(30, 30, 30);
+  border: 3px solid  white;
   border-radius: 100px;
 }
 
 .cta-btn:hover {
   /* font-weight: 900; */
   background-color: hsla(160, 100%, 37%, 0.6);
+  background-color:  rgba(250, 250, 250, 0.15);
 }
 
 .next-section {
@@ -191,29 +208,81 @@ H E R O
   /* text-align: center; */
 }
 
+
+/*
+****************
+J O I N
+****************
+*/
+
 .join {
-  /* margin: 25vh 0; */
   min-height: 95vh;
-  text-transform: capitalize;
-  /* background: url('../assets/images/ISP_BCN_NOCTAMBUL_254.jpg'); */
-  /* background-repeat: no-repeat; */
-  /* background-size: 100%; */
-  background-color: rgb(181, 181, 181);
-  /* background-blend-mode: multiply;  */
-  /* background-position: center;  */
+  /* text-transform: capitalize; */
+  /* background-color: rgb(181, 181, 181); */
+
+  background-image: url('../assets/images/ISP_BCN_NOCTAMBUL_254.jpg');
+  background-image: url('../assets/images/ISP_NORVILISKES_282.jpg');
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+
+.join--backgound {
+  max-width: 1200px; 
+  margin: 0 auto;
+  /* background-color: rgba(120, 0, 20, 0.916); */
+  /* background: linear-gradient(180deg, rgba(229, 229, 229, 0.5), transparent, transparent); */
+  background-color: rgba(229, 229, 229, 0.5);
+  background-color: rgba(5, 62, 39, 0.885);
+  background: linear-gradient(-45deg, rgba(152, 12, 12, 0.46), rgba(28, 28, 158, 0.45));
+  background-size: 100%;
 }
 
 .join--title {
   text-align: center;
 }
 
+.image-caption {
+  padding: .5rem 0 0 1rem;
+
+  /* font-family: var(--font-family-regular-p); */
+  font-family: var(--font-family-large-h);
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+span + span  {
+  display: none;
+}
+
 .join--sessions {
-  margin: 10rem 0 2rem;
+  margin: 6rem 0 2rem;
+}
+
+.join--sessions  > p {
+  font-family: var(--font-family-large-h);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.join--price p {
+  text-align: center;
+  font-size: 1.65rem;
+  font-weight: 600;
+  font-family: var(--font-family-large-h);
+  font-family: var(--font-family-regular-p);
+}
+
+.join--price p span {  
+  font-size: 2.2rem;
+  font-weight: 900;
+  font-family: var(--font-family-regular-p);
+
 }
 
 .heading {
   min-height: 95vh;
-  text-transform: uppercase;
+  text-transform: capitalize;
   
   text-align: center;
 
