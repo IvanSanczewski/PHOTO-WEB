@@ -50,6 +50,18 @@
   }
 }
 
+/* fonts */
+/* font-family: 'Exo 2', sans-serif; */
+/* font-family: 'Fira Sans', sans-serif; */
+/* font-family: 'Khand', sans-serif; */
+/* font-family: 'Oswald', sans-serif; */
+:root {
+  --font-family-small-h: 'Exo 2', sans-serif;
+  --font-family-large-h: 'Oswald', sans-serif;
+  --font-family-regular-h: 'Fira Sans', sans-serif;
+  --font-family-regular-p: 'Khand', sans-serif;
+}
+
 *,
 *::before,
 *::after {

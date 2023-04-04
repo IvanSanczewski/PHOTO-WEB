@@ -5,9 +5,9 @@
                 <div class="hero__content--title">
                     <p>learn</p>
                     <h1>black & white</h1>
-                    <h1>workshop</h1>
+                    <h1>photography workshop</h1>
                 </div>
-                <h2>practice & theory</h2>
+                <h2>Practice and theory</h2>
                 <div class="hero__content--cta">
                     <RouterLink to="/Join" class="cta-btn">join workshop</RouterLink>
                 </div>
