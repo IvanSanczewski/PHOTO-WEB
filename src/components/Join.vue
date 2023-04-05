@@ -34,11 +34,13 @@
                 <div class="input-wrap">
                     <!-- <label>Write your question</label> -->
                     <!-- <input :class="{inputFail : (storeGetUser.lastNameErr)}" type="text" v-model="storeDisplay.user.birthDate"> -->
-                    <input  type="textarea" placeholder="Write your question" v-model="storeDisplay.user.question">
+                    <textarea class="textarea" rows="5" type="textarea" placeholder="Write your question" v-model="storeDisplay.user.question"></textarea>
                     <!-- <span v-show="storeGetUser.lastNameErr" class="lastNameErr"> {{ storeGetUser.lastNameErrMsg }}</span> -->
                 </div>
             
-                <button>SEND</button>
+                <div class="btn-container">
+                    <button>SEND</button>
+                </div>
             </form>
         </div>
     </div>
