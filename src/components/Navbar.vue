@@ -1,13 +1,19 @@
 <template>
-    <nav v-if="storeDisplay.displayNav">
-        <p>LOGO</p>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <span @click="storeDisplay.toggleNav">1</span>
-    </nav>
-    <div v-else>
-        <span class="close-nav" @click="storeDisplay.toggleNav">X</span>
+    <div v-if="storeDisplay.displayNav" class="close" @click="storeDisplay.toggleNav">
+        <font-awesome-icon icon="xmark" />
     </div>
+    <div v-else class="open-container" @click="storeDisplay.toggleNav">
+        <font-awesome-icon class="open" icon="fa-solid fa-bars" />
+    </div>
+    <nav v-if="storeDisplay.displayNav">
+        <div class="main-menu">
+            <p>LOGO</p>
+            <RouterLink class="menu-item" to="/">Home</RouterLink>
+            <!-- <RouterLink to="/join">Join the Workshop</RouterLink> -->
+            <span class="menu-item" @click="storeDisplay.toggleJoin">Join the Workshop</span>
+            <RouterLink class="menu-item" to="/about">Contact & About Me</RouterLink>
+        </div>
+    </nav>
 </template>
 
 <script setup>

@@ -16,6 +16,14 @@
                         <button @click="storeDisplay.toggleJoin" class="cta-btn">join workshop</button>
                         <!-- <RouterLink to="/Join" class="cta-btn">join workshop</RouterLink> -->
                     </div>
+                    <div class="hero__content--social">
+                        <a href="https://www.instagram.com/ivan.sanczewski/">
+                            <font-awesome-icon class="social-icon" icon="fa-brands fa-facebook" />
+                        </a>
+                        <a href="https://www.facebook.com/IvanSanczewskiPhotography/">
+                            <font-awesome-icon class="social-icon" icon="fa-brands fa-instagram" />
+                        </a>
+                    </div>
                 </div>
                 <div class="container-footer">
                     <a href="#join" class="arrow-down" >

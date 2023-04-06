@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 
 export const useDisplayStore = defineStore('display', {
     state: () => ({
-        displayNav: true,
+        displayNav: false,
         displayJoinModal: false,
 
         //user questions
