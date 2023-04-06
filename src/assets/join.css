@@ -16,6 +16,8 @@
     padding: 3em;
     /* max-width: 95%; */
     
+    font-family: var(--font-family-small-h);
+
     color: white;
     background: #15024d;
     background: url('../assets/images/ISP_BLACK_SEA_1873_Edit_225_300.jpg');
@@ -53,14 +55,10 @@
     flex-direction: column;
 }
 
-.input-wrap:last-of-type input{
-    
-}
-
-
 .input-wrap>input {
     padding: 1em;
     
+    font-family: var(--font-family-small-h);
     font-size: .8rem;
     
     border: none;
@@ -70,17 +68,21 @@
 }
 
 .textarea {
-    background-color: #dddddd;
-    color: #666666;
+    height: 10vh;
     padding: 1em;
+
+    color: #666666;
+    background-color: #dddddd;
+    
+    font-size: 16px;
+    font-family: var(--font-family-small-h);
+    font-weight: 500;
+    line-height: 1.4;
+    
     border-radius: .5em;
     border: 2px solid transparent;
     outline: none;
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.4;
-    height: 10vh;
 
     transition: all 0.2s;
 }
@@ -104,44 +106,27 @@
 }
 
 .modal-form button {
-    outline: none;
     min-width: 50%;
     margin-top: 4em;
     padding: .6em 3em;
-
+    
     text-align: center;
+    
+    font-size: 1.2em;
+    font-family: var(--font-family-large-h);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+
 
     color: white;
     background-color: transparent;
     border: 3px solid  white;
     border-radius: 100px;
+    
+    outline: none;
 }
 
 .modal-form button:hover {
     background-color:  rgba(250, 250, 250, 0.15);
-}
-
-.modal-rules>h2 {
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.5em;
-}
-
-
-.rules-logo>img {
-    width: 35px
-}
-
-.rules-close {
-    margin-top: 2.5em;
-
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    column-gap: 1em;
-}
-
-.rules-close>p {
-    font-weight: 200;
-    font-size: .85em;
 }
