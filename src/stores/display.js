@@ -5,6 +5,7 @@ export const useDisplayStore = defineStore('display', {
     state: () => ({
         displayNav: false,
         displayJoinModal: false,
+        displayDesktopMenu: false,
 
         //user questions
         user: {
@@ -16,6 +17,11 @@ export const useDisplayStore = defineStore('display', {
     }),
 
     actions: {
+        toggleDesktopMenu() {
+            // (window.innerWidth >= 769) ? this.displayDesktopMenu : !this.displayDesktopMenu
+            (window.innerWidth >= 769) ? this.displayDesktopMenu = true : this.displayDesktopMenu = false
+        },
+        
         toggleNav() {
             this.displayNav = !this.displayNav
         },
@@ -25,8 +31,11 @@ export const useDisplayStore = defineStore('display', {
             console.log('toggleJoin activated')
         },
 
+
         validateQuestionUser() {
             console.log('hello');
-        }
+        },
+
     }
 })
+

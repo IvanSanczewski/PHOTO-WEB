@@ -166,7 +166,8 @@ H E R O
   /* background-color: rgba(120, 0, 20, 0.916); */
   background-color: rgba(5, 62, 39, 0.885);
   background: linear-gradient(-45deg, rgba(152, 12, 12, 0.76), rgba(28, 28, 158, 0.715));
-  background-size: 120% ;
+  background: linear-gradient(-45deg, rgba(118,16,52,0.75), rgba(75,22,103,0.75));
+  background-size: -400% ;
 }
 
 .hero__content--title {
@@ -272,6 +273,7 @@ span + span  {
 }
 
 .line{
+  max-width: 700px;
   width: 65dvw;
   border-bottom: 2px solid white;
 }
@@ -378,3 +380,78 @@ S Y L L A B U S
 .syllabus img {
   margin-bottom: 1rem;
 }
+
+
+
+
+
+/*
+**************
+**************
+**************
+
+D E S K T O P
+
+**************
+**************
+**************
+*/
+
+
+
+@media (min-width: 769px) {
+   .syllabus .container-main {
+    flex-direction: column;  
+    justify-content: space-between;
+    gap: 8rem
+  }   
+  
+  .syllabus img,
+  .syllabus p {
+    width: 45%;
+    margin: 0;
+  }
+
+  .syllabus br {
+    display: none
+  }
+  
+  .syllabus--shooting-header,
+  .syllabus--editing-header {  
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .syllabus--shooting-header p,
+  .syllabus--editing-header p {  
+    font-size: 1.2rem;
+
+    width: auto;
+  }
+
+  .syllabus--shooting-header h2,
+  .syllabus--editing-header h2 {  
+    margin: 0 auto
+  }
+
+  .syllabus--shooting-content, 
+  .syllabus--editing-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  .syllabus--editing-content {
+    flex-direction: row-reverse;
+  }
+  
+  .syllabus--shooting-content p,
+  .syllabus--editing-content p {
+    font-size: 1.5rem;
+    font-family: var(--font-family-regular-p);
+    letter-spacing: .15rem;
+  }
+
+}
+

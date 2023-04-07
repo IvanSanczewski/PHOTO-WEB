@@ -16,14 +16,6 @@
                         <button @click="storeDisplay.toggleJoin" class="cta-btn">join workshop</button>
                         <!-- <RouterLink to="/Join" class="cta-btn">join workshop</RouterLink> -->
                     </div>
-                    <div class="hero__content--social">
-                        <a href="https://www.instagram.com/ivan.sanczewski/">
-                            <font-awesome-icon class="social-icon" icon="fa-brands fa-facebook" />
-                        </a>
-                        <a href="https://www.facebook.com/IvanSanczewskiPhotography/">
-                            <font-awesome-icon class="social-icon" icon="fa-brands fa-instagram" />
-                        </a>
-                    </div>
                 </div>
                 <div class="container-footer">
                     <a href="#join" class="arrow-down" >
@@ -89,20 +81,32 @@
             <div class="container">
                 <div class="container-main">
                     <div class="syllabus--shooting">
-                        <p>Shooting</p>
-                        <h2>Photograph for <br> black & white</h2>
-                        <img src="../assets/images/ISP_NORVILISKES_112.jpg" alt="wooden cross in Lithuania">
-                        <!-- <p><span>portrait </span><span> landscape</span><span> street photo</span></p>     -->
-                        <p>Three shooting sessions to learn photographing techniques and think ahead in black and white</p>
-            
-                        <!-- <p>In each shooting session we will choose a different scenario to photograph and cover different technique and narrative aspects. The images that taken during the shooting sessions will be our starting point for the editing sessions </p> -->
+                        <div class="syllabus--shooting-header">
+                            <p>Shooting:</p>
+                            <h2>Photograph for <br> B&W</h2>
+                        </div>
+                        <div class="syllabus--shooting-content">
+                            <img src="../assets/images/ISP_NORVILISKES_112.jpg" alt="wooden cross in Lithuania">
+                            <!-- <p><span>portrait </span><span> landscape</span><span> street photo</span></p>     -->
+                            <p>Three shooting sessions to learn photographing techniques and think ahead in black and white</p>
+                            <!-- <ul>
+                                <li>Portrait</li>
+                                <li>Landscape</li>
+                                <li>Street Photo</li>
+                            </ul> -->
+                            <!-- <p>In each shooting session we will choose a different scenario to photograph and cover different technique and narrative aspects. The images that taken during the shooting sessions will be our starting point for the editing sessions </p> -->
+                        </div>
                     </div>
                     <div class="syllabus--editing">
-                        <p>Editing</p>
-                        <h2>Professional retouching conversion to black & white</h2>
-                        <img src="../assets/images/ISP_SARAJEVO_1571_2parts.jpg" alt="before-after black and white retouched portait">
-                        <p>Direct black and white conversion, color vs contrast methods, destructive vs non-destructive methods, layers and masks, brush, curves, double raw developing</p>
-                        <!-- <p>We'll use Lightroom and Photoshop to turn the images we took in our shooting sessions into black & white. From direct and destructive converting techniques, to more elaborated and non destructive ones, we'll learn to use Photoshop in depth main tools and techniques. All we will learn can be applied </p> -->
+                        <div class="syllabus--editing-header">
+                            <p>Editing:</p>
+                            <h2>Professional conversion to B&W</h2>
+                        </div>
+                        <div class="syllabus--editing-content">
+                            <img src="../assets/images/ISP_SARAJEVO_1571_2parts.jpg" alt="before-after black and white retouched portait">
+                            <p>Direct black and white conversion, color vs contrast methods, destructive vs non-destructive methods, layers and masks, brush, curves, double raw developing</p>
+                            <!-- <p>We'll use Lightroom and Photoshop to turn the images we took in our shooting sessions into black & white. From direct and destructive converting techniques, to more elaborated and non destructive ones, we'll learn to use Photoshop in depth main tools and techniques. All we will learn can be applied </p> -->
+                        </div>
                     </div>
                 </div>
                 <div class="container-footer">
