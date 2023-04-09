@@ -42,14 +42,14 @@ body {
 }
 
 .container-main {
-  margin-top: 3em;
+  margin-top: 1.5em;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 
 .container-footer {
-  margin: 3em 0;
+  margin: 1em 0;
   flex-shrink: 0;
   align-self: center;
 }
@@ -120,9 +120,11 @@ h2 {
   margin-bottom: 1em;
 
   font-size: 2.25rem;
+  font-size: 2.25rem;
   font-family: var(--font-family-large-h);
   
-  line-height: 1.25;
+  /* line-height: 1.25; */
+  line-height: 1;
 }
 
 br {
@@ -171,7 +173,7 @@ H E R O
 }
 
 .hero__content--title {
-  margin-top: 20dvh
+  margin-top: 10dvh
   /* margin: 2vh 0; */
 }
 
@@ -192,7 +194,7 @@ H E R O
 }
 
 .hero__content--cta {
-  margin-top: 12rem;
+  margin-top: 10dvh;
   align-self: center;
 }
 
@@ -238,6 +240,7 @@ J O I N
 
 .join--backgound {
   max-width: 1200px; 
+  height: auto;
   margin: 0 auto;
   /* background-color: rgba(120, 0, 20, 0.916); */
   /* background: linear-gradient(180deg, rgba(229, 229, 229, 0.5), transparent, transparent); */
@@ -251,7 +254,8 @@ J O I N
   text-align: center;
 }
 .join--title > h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
 }
 
 .image-caption {
@@ -279,26 +283,29 @@ span + span  {
 }
 
 .join--sessions {
-  margin: 3rem 0 4rem;
+  /* margin: 3rem 0 4rem; */
+  margin: 1rem 0;
 }
 
 .join--sessions  > p {
   font-family: var(--font-family-large-h);
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
+.join--price {
+  margin-top: -1rem;
+}
 .join--price p {
   text-align: center;
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-family: var(--font-family-large-h);
   font-family: var(--font-family-regular-p);
-  
 }
 
 .join--price p span {  
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 900;
   font-family: var(--font-family-regular-p);
   
@@ -337,12 +344,13 @@ H E A D I N G
 
 
 .heading .container-main {
-  margin: 4em;
-  gap: 4rem;
+  /* margin: 2em; */
+  margin-top: 3em;
+  gap: 2rem;
   
   font-size: 1.2em;
   font-family: var(--font-family-regular-p);
-  letter-spacing: .15em;
+  letter-spacing: 2.15em;
   
   
 }

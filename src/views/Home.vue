@@ -63,9 +63,9 @@
         <div class="heading-background">
             <div class="container">
                 <div class="container-main">
-                    <h3>Improve your skill and technique, develop your photographic style and give your images a narrative sense</h3>
-                    <h3>Learn professional developing and retouching with Photoshop and understand its core functions in a step-by-step methodology </h3>
-                    <h3>Individual porfolio reviews and classmate based discussions in every editing session</h3>
+                    <p>Improve your skill and technique, develop your photographic style and give your images a narrative sense</p>
+                    <p>Learn professional developing and retouching with Photoshop and understand its core functions in a step-by-step methodology </p>
+                    <p>Individual porfolio reviews and classmate based discussions in every editing session</p>
                 </div>
                 <div class="container-footer">
                     <a href="#syllabus" class="arrow-down">
