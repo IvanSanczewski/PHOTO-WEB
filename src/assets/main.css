@@ -259,7 +259,7 @@ J O I N
 }
 
 .image-caption {
-  padding: .5rem 0 0 1rem;
+  /* padding: .5rem 0 0 1rem; */
   
   text-align: center;
 
@@ -294,14 +294,15 @@ span + span  {
 }
 
 .join--price {
-  margin-top: -1rem;
+  /* margin-top: -1rem; */
 }
 .join--price p {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
-  font-family: var(--font-family-large-h);
+  /* font-family: var(--font-family-large-h); */
   font-family: var(--font-family-regular-p);
+  line-height: 1.2;
 }
 
 .join--price p span {  
@@ -408,7 +409,18 @@ D E S K T O P
 
 
 @media (min-width: 769px) {
-   .syllabus .container-main {
+  .hero__content--title {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  
+  .hero__content--cta {
+    flex-grow: 2;
+  }
+
+  .syllabus .container-main {
     flex-direction: column;  
     justify-content: space-between;
     gap: 8rem

@@ -9,11 +9,11 @@
 }
 
 .join-modal {
-    width: 55%;
+    width: 90%;
     max-width: 650px;
 
     margin: 100px auto;
-    padding: 3em;
+    padding: 1em;
     /* max-width: 95%; */
     
     font-family: var(--font-family-small-h);
