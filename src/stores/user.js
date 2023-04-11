@@ -55,6 +55,9 @@ export const useUserStore = defineStore('user', {
             } else if (!this.userRequestErr.mailRegEx.test(this.userRequest.email.trim())) {
                 this.userRequestErr.emptyEmailErr = false
                 this.userRequestErr.emailErr = true
+            } else {
+                this.userRequestErr.emptyEmailErr = false
+                this.userRequestErr.emailErr = false
             }
 
             //question validation

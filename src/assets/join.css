@@ -63,14 +63,20 @@
     padding: 1em;
     margin-bottom: 1em;
     
+    color: #666666;
+    background-color: #dddddd;
+
     font-family: var(--font-family-small-h);
     font-size: .8rem;
-    
-    border: none;
+        
     border-radius: .5em;
-    
+    border: 2px solid transparent;
     outline: none;
+
+    
+    transition: all 0.2s;
 }
+
 
 .textarea {
     height: 10vh;
@@ -79,25 +85,25 @@
     color: #666666;
     background-color: #dddddd;
     
-    font-size: 16px;
+    font-size: .8rem;
     font-family: var(--font-family-small-h);
-    font-weight: 500;
     line-height: 1.4;
     
     border-radius: .5em;
     border: 2px solid transparent;
     outline: none;
 
-
     transition: all 0.2s;
 }
   
-.textarea:hover {
+.textarea:hover,
+.input-wrap>input:hover {
     cursor: pointer;
     background-color: #eeeeee;
 }
   
-.textarea:focus {
+.textarea:focus,
+.input-wrap>input:focus {
     cursor: text;
     color: #333333;
     background-color: white;
@@ -140,8 +146,9 @@
     text-align: center;
 }
 
+
 .inputFail {
-    background-color: rgb(224, 141, 158);
+    background-color: rgb(255, 200, 200);
 }
 
 .inputErr {

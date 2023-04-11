@@ -14,31 +14,27 @@
                 
                 <!-- NAME -->
                 <div class="input-wrap">
-                    <!-- <input :class="{inputFail : (storeUser.nameErr)}" type="text" v-model="storeUser.userRequest.name"> -->
                     <input type="text" placeholder="Name" v-model="storeUser.userRequest.name" :class="{inputFail : (storeUser.userRequestErr.nameErr)}">
                     <span v-show="storeUser.userRequestErr.nameErr" class="inputErr"> {{ storeUser.userRequestErrMsg.nameErrMsg }}</span>
                 </div>
             
                 <!-- FAMILY NAME -->
                 <div class="input-wrap">
-                    <!-- <input :class="{inputFail : (storeUser.familyNameErr)}" type="text" v-model="storeUser.userRequest.name"> -->
                     <input type="text" placeholder="Family Name" v-model="storeUser.userRequest.familyName" :class="{inputFail : (storeUser.userRequestErr.familyNameErr)}">
                     <span v-show="storeUser.userRequestErr.familyNameErr" class="inputErr"> {{ storeUser.userRequestErrMsg.familyNameErrMsg }}</span>
                 </div>
             
                 <!-- EMAIL -->
                 <div class="input-wrap">
-                    <!-- <input :class="{inputFail : (storeUser.emailErr || storeUser.emptyEmailErr)}" type="text" v-model="storeUser.userRequest.email"> -->
-                    <input  type="text" placeholder="Email" v-model="storeUser.userRequest.email" :class="{inputFail : (storeUser.userRequestErr.emailErr || storeUser.userRequestErr.emptyEmailErr)}">
+                    <input type="text" placeholder="Email" v-model="storeUser.userRequest.email" :class="{inputFail : (storeUser.userRequestErr.emailErr || storeUser.userRequestErr.emptyEmailErr)}">
                     <span v-show="storeUser.userRequestErr.emailErr" class="inputErr"> {{ storeUser.userRequestErrMsg.emailErrMsg }}</span>
                     <span v-show="storeUser.userRequestErr.emptyEmailErr" class="inputErr"> {{ storeUser.userRequestErrMsg.emptyEmailErrMsg }}</span>
                 </div>
             
                 <!-- QUESTION -->
                 <div class="input-wrap">
-                    <!-- <input :class="{inputFail : (storeGetUser.lastNameErr)}" type="text" v-model="storeDisplay.user.birthDate"> -->
-                    <textarea class="textarea" rows="5" type="textarea" placeholder="Write your question" v-model="storeUser.userRequest.question"></textarea>
-                    <span v-show="storeUser.lastNameErr" class="inputErr"> {{ storeUser.userRequestErrMsg.questionErrMsg }}</span>
+                    <textarea class="textarea" :class="{inputFail : (storeUser.userRequestErr.questionErr)}" rows="5" type="textarea" placeholder="Write your question" v-model="storeUser.userRequest.question"></textarea>
+                    <span v-show="storeUser.userRequestErr.questionErr"> {{ storeUser.userRequestErrMsg.questionErrMsg }}</span>
                 </div>
             
                 <div class="btn-container">

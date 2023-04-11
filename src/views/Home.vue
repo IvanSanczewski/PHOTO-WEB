@@ -34,7 +34,8 @@
                         <h2>An all-practice workshop</h2>
                     </div>
                     <img src="../assets/images/ISP_BASIC_2.jpg" alt="">
-                    <p class="image-caption"><span>portrait </span><span> landscape</span><span> street photo</span></p>
+                    <p class="image-caption">portrait</p>
+                    <!-- <p class="image-caption"><span>portrait </span><span> landscape</span><span> street photo</span></p> -->
                     <div class="join--sessions">
                         <div class="details">
                             <p>Thursday 4:30pm - 6:30pm</p>
@@ -47,7 +48,7 @@
                         <p>18 hours of lectures</p>
                     </div>
                     <div class="join--price">
-                        <p>price: <span>100.00 €</span></p>
+                        <p>price: <span>110.00 €</span></p>
                     </div>
                 </div>
                 <div class="container-footer">

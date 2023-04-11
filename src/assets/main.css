@@ -268,9 +268,9 @@ J O I N
   text-transform: capitalize;
 }
 
-span + span  {
+/* span + span  {
   display: none;
-}
+} */
 
 .details {
   margin-bottom: .5rem
@@ -296,6 +296,7 @@ span + span  {
 .join--price {
   /* margin-top: -1rem; */
 }
+
 .join--price p {
   text-align: center;
   font-size: 1.5rem;
@@ -414,6 +415,11 @@ D E S K T O P
 
 
 @media (min-width: 769px) {
+  
+  .join .container-main {
+    padding: 0 5vw;
+  }  
+  
   .hero__content--title {
     flex-grow: 1;
     display: flex;
@@ -423,6 +429,32 @@ D E S K T O P
   
   .hero__content--cta {
     flex-grow: 2;
+  }
+
+  .join--title>h2 {
+    font-size: 3rem;
+    margin: 2rem 0
+  }
+
+  .join--sessions {
+    margin: 4em 0;
+  }
+
+  .join--sessions > p {
+    font-size: 2.2rem;
+  }
+
+  .join--price p{
+    font-size: 2.1rem;
+  }
+
+  .join--price p span{
+    font-size: 3rem;
+  }
+
+  .heading .container-main {
+    padding: 4rem 15vw;
+    gap: 8rem
   }
 
   .syllabus .container-main {
