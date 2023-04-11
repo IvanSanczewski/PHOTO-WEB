@@ -366,24 +366,29 @@ S Y L L A B U S
 */
 
 .syllabus {
-  min-height: 95vh;
+  min-height: 100vh;
 }
 
 .syllabus-background {
   max-width: 1200px; 
+  min-height: 170vh;
+  /* min-height: 100vh; */
   margin: 0 auto;
-  height: auto;
   background: linear-gradient(-45deg, rgba(152, 12, 12, 0.46), rgba(28, 28, 158, 0.45));
   background-size: 100%;
 }
 
 
 .syllabus .container {
-  height: auto;
+  /* height: auto; */
 }
 
 .syllabus .container-main {
   gap: 4rem
+}
+
+.syllabus .container-footer {
+  margin-top: 5dvh;
 }
 
 .syllabus img {
@@ -422,8 +427,8 @@ D E S K T O P
 
   .syllabus .container-main {
     flex-direction: column;  
-    justify-content: space-between;
-    gap: 8rem
+    /* justify-content: space-between; */
+    gap: 6rem
   }   
   
   .syllabus img,
@@ -436,6 +441,10 @@ D E S K T O P
     display: none
   }
   
+  .syllabus-background {
+    min-height: 140dvh;
+  }
+
   .syllabus--shooting-header,
   .syllabus--editing-header {  
     display: flex;
@@ -475,3 +484,8 @@ D E S K T O P
 
 }
 
+@media (min-height: 701px) and (max-width: 450px) {
+  .syllabus-background {
+    min-height: 135dvh;
+  }
+}
