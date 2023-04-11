@@ -49,14 +49,19 @@
 }
 
 .input-wrap {
-    margin: 1em;
+    margin: 1.25rem 1rem;
     
     display: flex;
     flex-direction: column;
 }
 
+.modal-form > p {
+    margin: 1.5em;
+}
+
 .input-wrap>input {
     padding: 1em;
+    margin-bottom: 1em;
     
     font-family: var(--font-family-small-h);
     font-size: .8rem;
@@ -107,7 +112,7 @@
 
 .modal-form button {
     min-width: 50%;
-    margin-top: 4em;
+    margin: 3em 0;
     padding: .6em 3em;
     
     text-align: center;
@@ -129,4 +134,16 @@
 
 .modal-form button:hover {
     background-color:  rgba(250, 250, 250, 0.15);
+}
+
+.modal-form > p:last-of-type {
+    text-align: center;
+}
+
+.inputFail {
+    background-color: rgb(224, 141, 158);
+}
+
+.inputErr {
+    margin-top: -1em;
 }

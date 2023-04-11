@@ -7,40 +7,45 @@
             <div class="form-logo">
                 <span>LOGO</span>
             </div>
-            <form class="modal-form" @submit.prevent="storeDisplay.validateQuestionUser">
+            <form class="modal-form" @submit.prevent="storeUser.validateUserQuestion">
             
+                <p>Send a request to join the workshop and receive all the instructions.</p>
+                <p>You can also ask any question you need.</p>
+                
+                <!-- NAME -->
                 <div class="input-wrap">
-                    <!-- <label>Name</label> -->
-                    <!-- <input :class="{inputFail : (storeGetUser.firstNameErr)}" type="text" v-model="storeDisplay.user.name"> -->
-                    <input type="text" placeholder="Name" v-model="storeDisplay.user.name">
-                    <!-- <span v-show="storeGetUser.firstNameErr" class="firstNameErr"> {{ storeGetUser.firstNameErrMsg }}</span> -->
+                    <!-- <input :class="{inputFail : (storeUser.nameErr)}" type="text" v-model="storeUser.userRequest.name"> -->
+                    <input type="text" placeholder="Name" v-model="storeUser.userRequest.name" :class="{inputFail : (storeUser.userRequestErr.nameErr)}">
+                    <span v-show="storeUser.userRequestErr.nameErr" class="inputErr"> {{ storeUser.userRequestErrMsg.nameErrMsg }}</span>
                 </div>
             
+                <!-- FAMILY NAME -->
                 <div class="input-wrap">
-                    <!-- <label>Email</label> -->
-                    <!-- <input :class="{inputFail : (storeGetUser.emailErr || storeGetUser.emptyEmailErr)}" type="text" v-model="storeDisplay.user.email"> -->
-                    <input  type="text" placeholder="Email" v-model="storeDisplay.user.email">
-                    <!-- <span v-show="storeGetUser.emailErr" class="emailErr"> {{ storeGetUser.emailErrMsg }}</span>
-                    <span v-show="storeGetUser.emptyEmailErr" class="emptyEmailErr"> {{ storeGetUser.emptyEmailErrMsg }}</span> -->
+                    <!-- <input :class="{inputFail : (storeUser.familyNameErr)}" type="text" v-model="storeUser.userRequest.name"> -->
+                    <input type="text" placeholder="Family Name" v-model="storeUser.userRequest.familyName" :class="{inputFail : (storeUser.userRequestErr.familyNameErr)}">
+                    <span v-show="storeUser.userRequestErr.familyNameErr" class="inputErr"> {{ storeUser.userRequestErrMsg.familyNameErrMsg }}</span>
                 </div>
             
+                <!-- EMAIL -->
                 <div class="input-wrap">
-                    <!-- <label>Date of birth</label> -->
+                    <!-- <input :class="{inputFail : (storeUser.emailErr || storeUser.emptyEmailErr)}" type="text" v-model="storeUser.userRequest.email"> -->
+                    <input  type="text" placeholder="Email" v-model="storeUser.userRequest.email" :class="{inputFail : (storeUser.userRequestErr.emailErr || storeUser.userRequestErr.emptyEmailErr)}">
+                    <span v-show="storeUser.userRequestErr.emailErr" class="inputErr"> {{ storeUser.userRequestErrMsg.emailErrMsg }}</span>
+                    <span v-show="storeUser.userRequestErr.emptyEmailErr" class="inputErr"> {{ storeUser.userRequestErrMsg.emptyEmailErrMsg }}</span>
+                </div>
+            
+                <!-- QUESTION -->
+                <div class="input-wrap">
                     <!-- <input :class="{inputFail : (storeGetUser.lastNameErr)}" type="text" v-model="storeDisplay.user.birthDate"> -->
-                    <input  type="text" placeholder="Date of birth" v-model="storeDisplay.user.birthDate">
-                    <!-- <span v-show="storeGetUser.lastNameErr" class="lastNameErr"> {{ storeGetUser.lastNameErrMsg }}</span> -->
-                </div>
-
-                <div class="input-wrap">
-                    <!-- <label>Write your question</label> -->
-                    <!-- <input :class="{inputFail : (storeGetUser.lastNameErr)}" type="text" v-model="storeDisplay.user.birthDate"> -->
-                    <textarea class="textarea" rows="5" type="textarea" placeholder="Write your question" v-model="storeDisplay.user.question"></textarea>
-                    <!-- <span v-show="storeGetUser.lastNameErr" class="lastNameErr"> {{ storeGetUser.lastNameErrMsg }}</span> -->
+                    <textarea class="textarea" rows="5" type="textarea" placeholder="Write your question" v-model="storeUser.userRequest.question"></textarea>
+                    <span v-show="storeUser.lastNameErr" class="inputErr"> {{ storeUser.userRequestErrMsg.questionErrMsg }}</span>
                 </div>
             
                 <div class="btn-container">
                     <button>SEND</button>
                 </div>
+                <p>Or you can send me an email <br> to <span class="mail-to">isanczewski@gmail.com</span></p>
+
             </form>
         </div>
     </div>
@@ -48,7 +53,10 @@
 
 <script setup>
 import { useDisplayStore } from '../stores/display.js';
+import { useUserStore } from '../stores/user.js';
+
 
 const storeDisplay = useDisplayStore()
+const storeUser = useUserStore()
 
 </script>

@@ -7,13 +7,6 @@ export const useDisplayStore = defineStore('display', {
         displayJoinModal: false,
         displayDesktopMenu: false,
 
-        //user questions
-        user: {
-            name: null,
-            email: null,
-            birthDate: null,
-            question: null 
-        }
     }),
 
     actions: {
