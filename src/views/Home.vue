@@ -12,13 +12,10 @@
                         <h1>photography workshop</h1>
                     </div>
                     <h2>Practice and theory</h2>
+                    <h2><span>with</span> Ivan Sanczewski</h2>
                     <div class="hero__content--cta">
                         <button @click="storeDisplay.toggleJoin" class="cta-btn">join workshop</button>
                         <!-- <RouterLink to="/Join" class="cta-btn">join workshop</RouterLink> -->
-                    </div>
-                    <div>
-                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                        </svg>
                     </div>
                 </div>
                 <div class="container-footer">

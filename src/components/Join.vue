@@ -5,13 +5,13 @@
                 <font-awesome-icon icon="xmark" />
             </p>
             <div class="form-logo">
-                <span>LOGO</span>
+                <!-- TODO: ADD LOGO -->
             </div>
             <form action="https://formspree.io/f/xwkjwnvn" method="POST" class="modal-form">
             <!-- <form action="https://formsubmit.co/isanczewski@gmail.com" method="POST" class="modal-form"> -->
             <!-- <form action="https://formsubmit.co/isanczewski@gmail.com" method="POST" class="modal-form" @submit.prevent="storeUser.validateUserQuestion"> -->
             <!-- <form class="modal-form" @submit.prevent="storeUser.validateUserQuestion"> -->
-                <p>Send a request to join the workshop and receive all the instructions.</p>
+                <p>Send a request to join the workshop and receive the procedure instructions.</p>
                 <p>You can also ask any question you need.</p>
                 
                 <!-- NAME -->

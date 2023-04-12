@@ -2,8 +2,6 @@
 @import './navbar.css';
 @import './join.css';
 
-
-
 body {
   max-width: 100dvw;
   color: var(--vt-c-white-soft);
@@ -181,7 +179,11 @@ H E R O
   margin-bottom: 1em;
   text-transform: uppercase;
   /* font-style: italic; */
+}
 
+.hero span {
+  font-size: 1.5rem;
+  text-transform: none;
 }
 
 .hero h2 {
@@ -192,6 +194,11 @@ H E R O
   font-weight: 400;
   letter-spacing: .15rem;
 }
+
+.hero h2+h2:not(span) {
+  text-transform: uppercase;
+}
+
 
 .hero__content--cta {
   margin-top: 10dvh;
@@ -293,9 +300,9 @@ J O I N
   font-weight: 400;
 }
 
-.join--price {
-  /* margin-top: -1rem; */
-}
+/* .join--price {
+  margin-top: -1rem;
+} */
 
 .join--price p {
   text-align: center;
@@ -380,9 +387,9 @@ S Y L L A B U S
 }
 
 
-.syllabus .container {
-  /* height: auto; */
-}
+/* .syllabus .container {
+  height: auto;
+} */
 
 .syllabus .container-main {
   gap: 4rem
