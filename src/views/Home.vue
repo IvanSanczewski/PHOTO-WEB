@@ -16,6 +16,10 @@
                         <button @click="storeDisplay.toggleJoin" class="cta-btn">join workshop</button>
                         <!-- <RouterLink to="/Join" class="cta-btn">join workshop</RouterLink> -->
                     </div>
+                    <div>
+                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                        </svg>
+                    </div>
                 </div>
                 <div class="container-footer">
                     <a href="#join" class="arrow-down" >

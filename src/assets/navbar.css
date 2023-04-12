@@ -33,6 +33,15 @@
     font-size: 1.5em;
 }
 
+.icon-logo {
+    background-image: url('../images/camera-svgrepo-com.svg');
+    width: 30px;
+    height: 30px;
+    /* background-size: cover;
+    background-position: center;
+    display:inline-block; */
+}
+
 .main-menu {
     margin: 6rem 0;
 
