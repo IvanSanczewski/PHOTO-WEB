@@ -77,7 +77,6 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 import { useDisplayStore} from '../stores/display.js'
-import { isSVGTag } from '@vue/shared';
 
 const storeDisplay = useDisplayStore()
 </script>

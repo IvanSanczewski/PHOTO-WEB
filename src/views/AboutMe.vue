@@ -1,4 +1,7 @@
 <template>
+   <div v-if="storeDisplay.displayJoinModal">
+      <Join />
+    </div>
   <div class="about-background">
     <div class="container">
       <div class="about">
@@ -35,4 +38,12 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import { useDisplayStore } from '../stores/display.js';
+
+import Join from '../components/Join.vue'
+
+const storeDisplay = useDisplayStore()
+</script>
 

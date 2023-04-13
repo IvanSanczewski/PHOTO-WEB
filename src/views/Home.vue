@@ -124,11 +124,9 @@
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+
 import { useDisplayStore } from '../stores/display.js';
 import Join from '../components/Join.vue'
 
 const storeDisplay = useDisplayStore()
-
-
 </script>
