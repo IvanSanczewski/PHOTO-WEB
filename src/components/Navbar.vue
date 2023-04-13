@@ -5,11 +5,12 @@
         </div>
         <div v-else class="open-container" @click="storeDisplay.toggleNav">
             <div class="logo-container">
-                <div class="logo">
+                <!-- <div class="logo">
                     <font-awesome-icon icon="fa-solid fa-camera-retro" />
-                </div>
+                </div> -->
                 <div class="logo-name">
                     <p class="ivan">Ivan Sanczewski</p>
+                    <div class="logo-line"></div>
                     <p class="workshops">WORKSHOPS</p>
                 </div>
             </div>
@@ -18,11 +19,12 @@
         <nav v-if="storeDisplay.displayNav">
             <div class="main-menu" >
                 <div class="logo-container-in-menu">
-                    <div class="logo">
+                    <!-- <div class="logo">
                         <font-awesome-icon icon="fa-solid fa-camera-retro" />
-                    </div>
+                    </div> -->
                     <div class="logo-name">
                         <p class="ivan">Ivan Sanczewski</p>
+                        <div class="logo-line"></div>
                         <p class="workshops">WORKSHOPS</p>
                     </div>
                 </div>
@@ -44,11 +46,12 @@
         <nav>
             <div class="main-menu" >
                 <div class="logo-container">
-                    <div class="logo">
+                    <!-- <div class="logo">
                         <font-awesome-icon icon="fa-solid fa-camera-retro" />
-                    </div>
+                    </div> -->
                     <div class="logo-name">
                         <p class="ivan">Ivan Sanczewski</p>
+                        <div class="logo-line"></div>
                         <p class="workshops">WORKSHOPS</p>
                     </div>
                 </div>

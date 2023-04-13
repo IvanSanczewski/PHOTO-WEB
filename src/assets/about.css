@@ -1,12 +1,14 @@
 .about-background {
     max-width: 1200px;
+    min-height: 245dvh;
     /* FIXME: BACKGROUND SHOULD TAKE WHOLE CONTENT */
     margin: 0 auto;
     background: linear-gradient(-45deg, rgba(118,16,52,0.75), rgba(75,22,103,0.75));
 }
 
 .about {
-    margin-top: 12dvh;
+    margin-top: 8rem;
+    padding: 0 1em;
     display: flex;
     flex-direction: column-reverse;
 }
@@ -17,28 +19,37 @@
     font-size: 2rem;
 }
 
-.about__content--title br {
-    display: none;
+/* .about__content--text p {
+    margin: 1.5rem 0;
+} */
+
+.contact-me {
+    margin-top: 2.5rem
 }
 
-.about__content--text p {
-    margin: 1.5rem 0;
+.about__content--text p + p{
+    margin-top: 1.5rem;
 }
 
 .about__content--social {
+    margin-bottom: 2rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    align-items: center;
+    gap: .5rem;
 }
 
+.about__content--text--links p {
+    text-align: center;
+}
 
 /* .about__portrait--caption a { */
 .about a {
     display: inline-block;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
     
     cursor: pointer;
-
 }
 
 .about a:focus,
@@ -48,6 +59,8 @@
 
 @media (min-width: 769px) {
     .about{
+        padding: 0;
+
         flex-direction: row;
         justify-content: space-between;
         gap: 5rem
@@ -67,35 +80,28 @@
         text-align: end;
         font-size: 3rem;
     }
-
-    .about__content--title br {
-        display: block;
+    
+    .about__content--text--links {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .about-background {
+        min-height: 115dvh;
     }
 }
 
+@media (max-height: 700px) and (max-width: 768px) {
+    .about-background {
+        min-height: 275dvh;
+    }
+} 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .container-row {
-    max-width: 1080px;
-    width: 90vw;
-    margin: 0 auto;
-
-    height: 100dvh;
-
-    display: flex;
-} */
+@media (min-height: 701px) and (max-width: 768px) {
+    .about-background {
+        min-height: 225dvh;
+    }
+} 
