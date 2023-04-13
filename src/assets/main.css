@@ -1,6 +1,7 @@
 @import './base.css';
 @import './navbar.css';
 @import './join.css';
+@import './about.css';
 
 body {
   max-width: 100dvw;

@@ -39,11 +39,11 @@
                     <span v-show="storeUser.userRequestErr.questionErr"> {{ storeUser.userRequestErrMsg.questionErrMsg }}</span>
                 </div>
             
-                <!-- <input type="hidden" name="_next" value="https://https://workshops.ivansanczewski.com/about"> -->
-                <!-- <input type="hidden" name="_subject" value="New request from Workshops page"> -->
+                <!-- <input type="hidden" name="_next" value="https://https://workshops.ivansanczewski.com/about">
+                <input type="hidden" name="_subject" value="New request from Workshops page"> -->
 
                 <div class="btn-container">
-                    <button type="submit">SEND NOW</button>
+                    <button type="submit">SEND</button>
                 </div>
                 <p>Or you can send me an email <br> to <span class="mail-to">isanczewski@gmail.com</span></p>
 
