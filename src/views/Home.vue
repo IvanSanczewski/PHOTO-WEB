@@ -34,7 +34,11 @@
                     <div class="join--title">
                         <h2>An all-practice workshop</h2>
                     </div>
-                    <img src="../assets/images/ISP_BASIC_2.jpg" alt="">
+                    <!-- <img src="../assets/images/ISP_BASIC_2.jpg" alt=""> -->
+                    <!-- <div v-for="(images)" > -->
+
+                        <!-- <img src="{{}}" alt="">  -->
+                    <!-- </div> -->
                     <p class="image-caption">portrait</p>
                     <!-- <p class="image-caption"><span>portrait </span><span> landscape</span><span> street photo</span></p> -->
                     <div class="join--sessions">
@@ -124,9 +128,10 @@
 </template>
 
 <script setup>
-
 import { useDisplayStore } from '../stores/display.js';
+import { useImagesStore } from '../stores/images.js';
 import Join from '../components/Join.vue'
 
 const storeDisplay = useDisplayStore()
+const storeImages = useImagesStore()
 </script>
