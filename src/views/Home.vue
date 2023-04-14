@@ -34,9 +34,22 @@
                     <div class="join--title">
                         <h2>An all-practice workshop</h2>
                     </div>
+                    <div class="slider">
+                        <slick :autoplay="true" :autoplaySpeed="3000">
+                            <div v-for="(image, index) in storeImages.images" :key="index">
+                                <div class="slider--genres" v-if="image.category === 'slider'">
+                                    <img :src="image.path" :alt="image.alt">
+                                    <p>{{ index }} - {{ image.caption }}</p>
+                                </div>
+                            </div>
+                        </slick>
+                    </div>
+
+
+
+
                     <!-- <img src="../assets/images/ISP_BASIC_2.jpg" alt=""> -->
                     <!-- <div v-for="(images)" > -->
-
                         <!-- <img src="{{}}" alt="">  -->
                     <!-- </div> -->
                     <p class="image-caption">portrait</p>
@@ -128,6 +141,9 @@
 </template>
 
 <script setup>
+// import Slick from 'vue-slick'
+import VueSlick from 'vue-slick'
+
 import { useDisplayStore } from '../stores/display.js';
 import { useImagesStore } from '../stores/images.js';
 import Join from '../components/Join.vue'
