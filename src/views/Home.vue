@@ -39,7 +39,7 @@
                             <div v-for="(image, index) in storeImages.images" :key="index">
                                 <div class="slider--genres" v-if="image.category === 'slider'">
                                     <img :src="image.path" :alt="image.alt">
-                                    <p>{{ index }} - {{ image.caption }}</p>
+                                    <p style="text-align: center">{{ image.caption }}</p>
                                 </div>
                             </div>
                         </slick>
