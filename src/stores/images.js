@@ -10,11 +10,10 @@ export const useImagesStore = defineStore('images', {
                 caption: 'Photo by Sergio Sarnicola',
                 alt: 'portrait of Ivan Sanzewski',
                 location: 'Garda, Italy',
+                genre: 'portrait',
+                site: 'about',
                 page: 'about',
-                category: [
-                    "slider1",
-                    "slider2"
-                ],
+                category: '',
                 isBackground: false
             },
             {      
@@ -23,7 +22,9 @@ export const useImagesStore = defineStore('images', {
                 caption: 'landscape',
                 alt: 'cross by the road',
                 location: 'Norviliškes, Lithuania',
-                page: 'home',
+                genre: 'landscape',
+                site: 'sliderJoin',
+                page: 'landing',
                 category: 'slider',
                 isBackground: false
             },
@@ -33,7 +34,9 @@ export const useImagesStore = defineStore('images', {
                 caption: 'landscape',
                 alt: 'lone road surrounded by trees',
                 location: 'Norviliškes, Lithuania',
-                page: 'home',
+                genre: 'landscape',
+                site: '',
+                page: 'landing',
                 category: '',
                 isBackground: true
             },
@@ -43,7 +46,9 @@ export const useImagesStore = defineStore('images', {
                 caption: 'street photo',
                 alt: 'birds like notes on a staff',
                 location: 'Odesa, Ukraine',
-                page: 'home',
+                genre: 'street',
+                site: '',
+                page: 'landing',
                 category: '',
                 isBackground: true
             },
@@ -53,7 +58,9 @@ export const useImagesStore = defineStore('images', {
                 caption: 'portrait',
                 alt: 'portrait of two young women',
                 location: 'Perppignan, France',
-                page: 'home',
+                genre: 'portrait',
+                site: 'sliderJoin',
+                page: 'landing',
                 category: 'slider',
                 isBackground: false
             },
@@ -63,7 +70,9 @@ export const useImagesStore = defineStore('images', {
                 caption: 'street photo',
                 alt: 'lone man walking at night',
                 location: 'Barcelona, Spain',
-                page: 'home',
+                genre: 'street',
+                site: '',
+                page: 'landing',
                 category: '',
                 isBackground: true
             },
@@ -73,7 +82,9 @@ export const useImagesStore = defineStore('images', {
                 caption: 'portrait',
                 alt: 'muslim man showing a mosquee tattoo',
                 location: 'Sarajevo, Bosnia Herzegovina',
-                page: 'home',
+                genre: 'portrait',
+                site: '',
+                page: 'landing',
                 category: '',
                 isBackground: false
             },
@@ -83,8 +94,10 @@ export const useImagesStore = defineStore('images', {
                 caption: 'portrait',
                 alt: 'woman in front of Ukrain map',
                 location: 'Donetsk, Ukraine',
-                page: 'home',
-                category: 'slider',
+                genre: '',
+                site: 'sliderJoin',
+                page: 'landing',
+                category: '',
                 isBackground: false
             },
             {      
@@ -93,7 +106,9 @@ export const useImagesStore = defineStore('images', {
                 caption: 'street photo',
                 alt: 'dog and woman',
                 location: 'Barcelona, Spain',
-                page: 'home',
+                genre: 'street',
+                site: 'sliderJoin',
+                page: 'landing',
                 category: '',
                 isBackground: false
             },
@@ -103,7 +118,9 @@ export const useImagesStore = defineStore('images', {
                 caption: 'street photo',
                 alt: 'man smoking',
                 location: 'Bergamo Alta, Italy',
-                page: 'home',
+                genre: 'street',
+                site: 'sliderJoin',
+                page: 'landing',
                 category: 'slider',
                 isBackground: false
             },
@@ -113,7 +130,9 @@ export const useImagesStore = defineStore('images', {
                 caption: 'street photo',
                 alt: 'statue of the British Museum',
                 location: 'London, UK',
-                page: 'home',
+                genre: 'street',
+                site: 'sliderJoin',
+                page: 'landing',
                 category: 'slider',
                 isBackground: false
             },
