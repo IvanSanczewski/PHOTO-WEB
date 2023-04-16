@@ -18,18 +18,6 @@ export const useImagesStore = defineStore('images', {
             },
             {      
                 id: '',
-                path: 'src/assets/images/ISP_NORVILISKES_112.jpg',
-                caption: 'landscape',
-                alt: 'cross by the road',
-                location: 'Norviliškes, Lithuania',
-                genre: 'landscape',
-                site: 'sliderJoin',
-                page: 'landing',
-                category: 'slider',
-                isBackground: false
-            },
-            {      
-                id: '',
                 path: 'src/assets/images/ISP_NORVILISKES_282.jpg',
                 caption: 'landscape',
                 alt: 'lone road surrounded by trees',
@@ -54,18 +42,6 @@ export const useImagesStore = defineStore('images', {
             },
             {      
                 id: '',
-                path: 'src/assets/images/ISP_BASIC_2.jpg',
-                caption: 'portrait',
-                alt: 'portrait of two young women',
-                location: 'Perppignan, France',
-                genre: 'portrait',
-                site: 'sliderJoin',
-                page: 'landing',
-                category: 'slider',
-                isBackground: false
-            },
-            {      
-                id: '',
                 path: 'src/assets/images/ISP_BCN_NOCTAMBUL_254.jpg',
                 caption: 'street photo',
                 alt: 'lone man walking at night',
@@ -86,6 +62,44 @@ export const useImagesStore = defineStore('images', {
                 site: '',
                 page: 'landing',
                 category: '',
+                isBackground: false
+            },
+            {      
+                id: '',
+                path: 'src/assets/images/ISP_NORVILISKES_112.jpg',
+                caption: 'landscape',
+                alt: 'cross by the road',
+                location: 'Norviliškes, Lithuania',
+                genre: 'landscape',
+                site: 'sliderJoin',
+                page: 'landing',
+                category: 'slider',
+                isBackground: false
+            },
+        ],
+        sliderJoin: [
+            {      
+                id: '',
+                path: 'src/assets/images/ISP_NORVILISKES_137.jpg',
+                caption: 'landscape',
+                alt: 'timber',
+                location: 'Norviliškes, Lithuania',
+                genre: 'landscape',
+                site: 'sliderJoin',
+                page: 'landing',
+                category: 'slider',
+                isBackground: false
+            },
+            {      
+                id: '',
+                path: 'src/assets/images/ISP_BASIC_2.jpg',
+                caption: 'portrait',
+                alt: 'portrait of two young women',
+                location: 'Perppignan, France',
+                genre: 'portrait',
+                site: 'sliderJoin',
+                page: 'landing',
+                category: 'slider',
                 isBackground: false
             },
             {      
@@ -136,6 +150,7 @@ export const useImagesStore = defineStore('images', {
                 category: 'slider',
                 isBackground: false
             },
+
         ]
     })
 })

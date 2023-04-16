@@ -4,6 +4,8 @@
 @import './about.css';
 @import 'flickity/css/flickity.css';
 
+
+
 body {
   max-width: 100dvw;
   color: var(--vt-c-white-soft);
@@ -268,21 +270,12 @@ J O I N
   margin-bottom: 1.2rem;
 }
 
-.image-caption {
-  /* padding: .5rem 0 0 1rem; */
-  
-  text-align: center;
-
-  font-family: var(--font-family-large-h);
-  font-size: 1.25rem;
-  text-transform: capitalize;
-}
 
 /* span + span  {
   display: none;
 } */
 
-.details {
+.join--sessions--details {
   margin-bottom: .5rem
 }
 
@@ -297,9 +290,9 @@ J O I N
   margin: 1rem 0;
 }
 
-.join--sessions  > p {
+.join--sessions--headers > p {
   font-family: var(--font-family-large-h);
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -324,7 +317,49 @@ J O I N
 }
 
 
+/*
+****************
+F L I C K I T Y
+****************
+*/
 
+.slider__join {
+  display: flex;
+  flex-direction: column;
+}
+
+.image__caption {
+  align-self: center;
+
+  font-family: var(--font-family-small-h);
+  font-size: 1rem;
+}
+
+.flickity-button:focus {
+  background: white ;
+  outline: none;
+  box-shadow: none;
+}
+
+.carousel-cell {
+  width: 100%; /* half-width */
+  /* height: 160px; */
+  /* margin-right: 10px; */
+}
+
+.flickity-page-dot.is-selected {
+  background: white;
+}
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 /*
 ****************
@@ -450,7 +485,7 @@ D E S K T O P
     margin: 4em 0;
   }
 
-  .join--sessions > p {
+  .join--sessions--headers > p {
     font-size: 2.2rem;
   }
 
@@ -529,5 +564,16 @@ D E S K T O P
 @media (min-height: 701px) and (max-width: 450px) {
   .syllabus-background {
     min-height: 135dvh;
+  }
+}
+
+@media (max-height: 900px) and (min-width: 1080px) {
+  .join--sessions {
+    display: flex;
+    justify-content: space-between
+  }
+
+  .line{
+    display: none;
   }
 }

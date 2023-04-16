@@ -36,8 +36,8 @@
                     </div>
                     
                     <div class="main-carousel">
-                        <div class="carousel-cell" v-for="(image, index) in storeImages.images" :key="index">
-                            <div class="slider__join" v-show="image.site === 'sliderJoin'">
+                        <div class="carousel-cell" v-for="(image, index) in storeImages.sliderJoin" :key="index">
+                            <div class="slider__join">
                                 <img :src="image.path" :alt="image.alt">
                                 <span class="image__caption">{{ image.caption }}</span>
                             </div>
@@ -46,15 +46,17 @@
 
                     <!-- <p class="image-caption">portrait</p> -->
                     <div class="join--sessions">    
-                        <div class="details">
+                        <div class="join--sessions--details">
                             <p>Thursday 4:30pm - 6:30pm</p>
                             <p>From 4th May to 28th June</p>
                             <p>At Lojoteka, Šv. Kazimiero g. 8, Vilnius</p>
                         </div>
                         <div class="line"></div>
-                        <p>3 Outdoor shooting sessions</p>
-                        <p>6 Photoshop editing sessions</p>
-                        <p>18 hours of lectures</p>
+                        <div class="join--sessions--headers">
+                            <p>3 Outdoor shooting sessions</p>
+                            <p>6 Photoshop editing sessions</p>
+                            <p>18 hours of lectures</p>
+                        </div>
                     </div>
                     <div class="join--price">
                         <p>price: <span>110.00 €</span></p>
