@@ -11,7 +11,10 @@ export const useImagesStore = defineStore('images', {
                 alt: 'portrait of Ivan Sanzewski',
                 location: 'Garda, Italy',
                 page: 'about',
-                category: '',
+                category: [
+                    "slider1",
+                    "slider2"
+                ],
                 isBackground: false
             },
             {      
@@ -114,7 +117,6 @@ export const useImagesStore = defineStore('images', {
                 category: 'slider',
                 isBackground: false
             },
-
         ]
     })
 })

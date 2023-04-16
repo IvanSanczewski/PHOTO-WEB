@@ -37,29 +37,37 @@
 
 
                     <!-- <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-                        <div class="carousel-cell" v-for="(image, index) in storeImages.images" :key="index">
                             <img v-if="image.category === 'slider'" :src="image.path" :alt="image.alt">
                         </div>
                     </div> -->
 
-                    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-                        <div class="carousel-cell">
-                            <img src="../assets/images/ISP_AGA_21.jpg" alt="">
+                        <div class="main-carousel">
+                            <div class="carousel-cell" v-for="(image, index) in storeImages.images" :key="index">
+                                <!-- <div class="item__wrapper"> -->
+                                        <img :src="image.path" alt="">
+                                        <span class="imager__caption">{{ image.caption }}</span>
+                                    <!-- </div> -->
+                            </div>
+                            <!-- <div class="carousel-cell">
+                                <img src="../assets/images/ISP_AGA_21.jpg" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <img src="../assets/images/ISP_MUSEOS_122_Edit.jpg" alt="">
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="item__wrapper">
+                                    <img src="../assets/images/ISP_BASIC_2.jpg" alt="">
+                                    <span class="imager__caption">asdkjahsjkdh</span>
+                                </div>
+                            </div> -->
                         </div>
-                        <div class="carousel-cell">
-                            <img src="../assets/images/ISP_MUSEOS_122_Edit.jpg" alt="">
-                        </div>
-                        <div class="carousel-cell">
-                            <img src="../assets/images/ISP_BASIC_2.jpg" alt="">
-                        </div>
-                    </div>
 
 
-                    <!-- <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'> -->
-                                    <!-- <div class="carousel-cell" v-if="image.category === 'slider'">
-                                        <p style="text-align: center">{{ image.caption }}</p>
-                                    </div> -->
-                    <!-- </div> -->
+                    <!-- <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                            <div class="carousel-cell" v-if="image.category === 'slider'">
+                            <p style="text-align: center">{{ image.caption }}</p>
+                        </div>
+                    </div> -->
 
 
                     <!-- <p class="image-caption">portrait</p> -->

@@ -2,6 +2,7 @@
 @import './navbar.css';
 @import './join.css';
 @import './about.css';
+@import 'flickity/css/flickity.css';
 
 body {
   max-width: 100dvw;
@@ -33,8 +34,9 @@ body {
   width: 90vw;
   margin: 0 auto;
 
-  height: 95dvh;
-  height: 100dvh;
+  height: auto;
+  min-height: 100dvh;
+  /* height: 100dvh; */
   
   display: flex;
   flex-direction: column;

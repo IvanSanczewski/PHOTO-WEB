@@ -8,8 +8,6 @@
                 <!-- TODO: ADD LOGO -->
             </div>
             <form action="https://formspree.io/f/xwkjwnvn" method="POST" class="modal-form">
-            <!-- <form action="https://formsubmit.co/isanczewski@gmail.com" method="POST" class="modal-form"> -->
-            <!-- <form action="https://formsubmit.co/isanczewski@gmail.com" method="POST" class="modal-form" @submit.prevent="storeUser.validateUserQuestion"> -->
             <!-- <form class="modal-form" @submit.prevent="storeUser.validateUserQuestion"> -->
                 <p>Send a request to join the workshop and receive the procedure instructions.</p>
                 <p>You can also ask any question you need.</p>
@@ -39,13 +37,13 @@
                     <span v-show="storeUser.userRequestErr.questionErr"> {{ storeUser.userRequestErrMsg.questionErrMsg }}</span>
                 </div>
             
-                <!-- <input type="hidden" name="_next" value="https://https://workshops.ivansanczewski.com/about">
-                <input type="hidden" name="_subject" value="New request from Workshops page"> -->
+                <input type="hidden" name="_next" value="https://workshops.ivansanczewski.com">
+                <!-- <input type="hidden" name="_subject" value="New request from Workshops page"> -->
 
                 <div class="btn-container">
                     <button type="submit">SEND</button>
                 </div>
-                <p>Or you can send me an email <br> to <span class="mail-to">isanczewski@gmail.com</span></p>
+                <!-- <p>Or you can send me an email <br> to <span class="mail-to">isanczewski@gmail.com</span></p> -->
 
             </form>
         </div>

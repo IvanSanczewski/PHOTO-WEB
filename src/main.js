@@ -5,6 +5,8 @@ import App from './App.vue'
 import router from './router'
 
 import './assets/main.css'
+import './helpers/main'
+
 
 // /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -17,6 +19,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 
 // /* add icons to the library */
 library.add( fas, fab )
+
 
 const app = createApp(App)
 
