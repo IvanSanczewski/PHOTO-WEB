@@ -80,7 +80,8 @@ export const useImagesStore = defineStore('images', {
         sliderJoin: [
             {      
                 id: '',
-                path: 'src/assets/images/ISP_NORVILISKES_137.jpg',
+                // path: 'src/assets/images/ISP_NORVILISKES_137.jpg',
+                path: 'assets/images/ISP_NORVILISKES_137.jpg',
                 caption: 'landscape',
                 alt: 'timber',
                 location: 'Norviliškes, Lithuania',
@@ -92,7 +93,8 @@ export const useImagesStore = defineStore('images', {
             },
             {      
                 id: '',
-                path: 'src/assets/images/ISP_BASIC_2.jpg',
+                // path: 'src/assets/images/ISP_BASIC_2.jpg',
+                path: 'assets/images/ISP_BASIC_2.jpg',
                 caption: 'portrait',
                 alt: 'portrait of two young women',
                 location: 'Perppignan, France',
@@ -104,7 +106,8 @@ export const useImagesStore = defineStore('images', {
             },
             {      
                 id: '',
-                path: 'src/assets/images/ISP_LIBRARY_DONETSK_08.jpg',
+                // path: 'src/assets/images/ISP_LIBRARY_DONETSK_08.jpg',
+                path: 'assets/images/ISP_LIBRARY_DONETSK_08.jpg',
                 caption: 'portrait',
                 alt: 'woman in front of Ukrain map',
                 location: 'Donetsk, Ukraine',
@@ -116,7 +119,8 @@ export const useImagesStore = defineStore('images', {
             },
             {      
                 id: '',
-                path: 'src/assets/images/ISP_STREET_PHOTO_50001.jpg',
+                // path: 'src/assets/images/ISP_STREET_PHOTO_50001.jpg',
+                path: 'assets/images/ISP_STREET_PHOTO_50001.jpg',
                 caption: 'street photo',
                 alt: 'dog and woman',
                 location: 'Barcelona, Spain',
@@ -128,7 +132,8 @@ export const useImagesStore = defineStore('images', {
             },
             {      
                 id: '',
-                path: 'src/assets/images/ISP_BERGAMO_470.jpg',
+                // path: 'src/assets/images/ISP_BERGAMO_470.jpg',
+                path: 'assets/images/ISP_BERGAMO_470.jpg',
                 caption: 'street photo',
                 alt: 'man smoking',
                 location: 'Bergamo Alta, Italy',
@@ -140,7 +145,8 @@ export const useImagesStore = defineStore('images', {
             },
             {      
                 id: '',
-                path: 'src/assets/images/ISP_MUSEOS_122_Edit.jpg',
+                // path: 'src/assets/images/ISP_MUSEOS_122_Edit.jpg',
+                path: 'assets/images/ISP_MUSEOS_122_Edit.jpg',
                 caption: 'street photo',
                 alt: 'statue of the British Museum',
                 location: 'London, UK',
