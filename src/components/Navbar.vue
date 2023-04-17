@@ -5,9 +5,6 @@
         </div>
         <div v-else class="open-container" @click="storeDisplay.toggleNav">
             <div class="logo-container">
-                <!-- <div class="logo">
-                    <font-awesome-icon icon="fa-solid fa-camera-retro" />
-                </div> -->
                 <div class="logo-name">
                     <p class="ivan">Ivan Sanczewski</p>
                     <div class="logo-line"></div>
@@ -19,18 +16,15 @@
         <nav v-if="storeDisplay.displayNav">
             <div class="main-menu" >
                 <div class="logo-container-in-menu">
-                    <!-- <div class="logo">
-                        <font-awesome-icon icon="fa-solid fa-camera-retro" />
-                    </div> -->
                     <div class="logo-name">
                         <p class="ivan">Ivan Sanczewski</p>
                         <div class="logo-line"></div>
                         <p class="workshops">WORKSHOPS</p>
                     </div>
                 </div>
-                <RouterLink class="menu-item" to="/">Home</RouterLink>
-                <span class="menu-item" @click="storeDisplay.toggleJoin">Join the Workshop</span>
-                <RouterLink class="menu-item" to="/about">Contact & About Me</RouterLink>
+                <RouterLink class="menu-item" to="/" @click="storeDisplay.toggleNav">Home</RouterLink>
+                <span class="menu-item" @click="storeDisplay.toggleJoin(); storeDisplay.toggleNav(); ">Join the Workshop</span>
+                <RouterLink class="menu-item" to="/about" @click="storeDisplay.toggleNav">Contact & About Me</RouterLink>
                 <div class="social-menu">
                     <a target="blank" href="https://www.facebook.com/IvanSanczewskiPhotography/">
                         <font-awesome-icon class="menu-item" icon="fa-brands fa-facebook" />

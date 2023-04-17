@@ -10,5 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
       cellAlign: "left",
       contain: true,
     });
+    flkty.resize()
   }
 });

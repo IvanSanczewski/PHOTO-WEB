@@ -24,11 +24,9 @@ export const useDisplayStore = defineStore('display', {
             console.log('toggleJoin activated')
         },
 
-
         validateQuestionUser() {
             console.log('hello');
         },
-
     }
 })
 
